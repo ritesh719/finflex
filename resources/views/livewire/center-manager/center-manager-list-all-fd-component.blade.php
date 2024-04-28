@@ -30,6 +30,7 @@
                                 <td><b>Amount</b></td>
                                 <td><b>Status</b></td>
                                 <td><b>Action</b></td>
+                                
                             </tr>
                             <tbody>
                                 @foreach ($fds as $fd)
