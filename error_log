@@ -1,0 +1,124 @@
+[06-Sep-2022 09:30:06 UTC] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.0.0". You are running 7.3.33. in /home4/gitan3rj/public_html/vendor/composer/platform_check.php on line 24
+[07-Oct-2023 16:59:15 UTC] PHP Fatal error:  Uncaught Whoops\Exception\ErrorException: Using ${var} in strings is deprecated, use {$var} instead in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php:52
+Stack trace:
+#0 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): Whoops\Run->handleError(8192, 'Using ${var} in...', '/home1/jsmicewj...', 52)
+#1 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): include()
+#2 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/home1/jsmicewj...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Facade\\Ignition...')
+#4 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(50): class_implements('Facade\\Ignition...')
+#5 [internal function]: Facade\Ignition\SolutionProviders\SolutionProviderRepository->Facade\Ignition\SolutionProviders\{closure}('Facade\\Ignition...', 10)
+#6 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(700): array_filter(Array, Object(Closure), 1)
+#7 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(345): Illuminate\Support\Arr::where(Array, Object(Closure))
+#8 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(49): Illuminate\Support\Collection->filter(Object(Closure))
+#9 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php(36): Facade\Ignition\SolutionProviders\SolutionProviderRepository->getSolutionsForThrowable(Object(Whoops\Exception\ErrorException))
+#10 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(244): NunoMaduro\Collision\Adapters\Laravel\IgnitionSolutionsRepository->getFromThrowable(Object(Whoops\Exception\ErrorException))
+#11 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(123): NunoMaduro\Collision\Writer->renderSolution(Object(Whoops\Exception\Inspector))
+#12 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Handler.php(39): NunoMaduro\Collision\Writer->write(Object(Whoops\Exception\Inspector))
+#13 /home1/jsmicewj/jsm/vendor/filp/whoops/src/Whoops/Run.php(370): NunoMaduro\Collision\Handler->handle(Object(Whoops\Exception\ErrorException))
+#14 [internal function]: Whoops\Run->handleException(Object(Whoops\Exception\ErrorException))
+#15 {main}
+  thrown in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php on line 52
+[07-Oct-2023 16:59:15 UTC] PHP Fatal error:  Uncaught Whoops\Exception\ErrorException: Using ${var} in strings is deprecated, use {$var} instead in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php:52
+Stack trace:
+#0 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): Whoops\Run->handleError(8192, 'Using ${var} in...', '/home1/jsmicewj...', 52)
+#1 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): include()
+#2 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/home1/jsmicewj...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Facade\\Ignition...')
+#4 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(50): class_implements('Facade\\Ignition...')
+#5 [internal function]: Facade\Ignition\SolutionProviders\SolutionProviderRepository->Facade\Ignition\SolutionProviders\{closure}('Facade\\Ignition...', 10)
+#6 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(700): array_filter(Array, Object(Closure), 1)
+#7 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(345): Illuminate\Support\Arr::where(Array, Object(Closure))
+#8 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(49): Illuminate\Support\Collection->filter(Object(Closure))
+#9 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php(36): Facade\Ignition\SolutionProviders\SolutionProviderRepository->getSolutionsForThrowable(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#10 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(244): NunoMaduro\Collision\Adapters\Laravel\IgnitionSolutionsRepository->getFromThrowable(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#11 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(123): NunoMaduro\Collision\Writer->renderSolution(Object(NunoMaduro\Collision\Adapters\Laravel\Inspector))
+#12 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Handler.php(39): NunoMaduro\Collision\Writer->write(Object(NunoMaduro\Collision\Adapters\Laravel\Inspector))
+#13 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php(72): NunoMaduro\Collision\Handler->handle()
+#14 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(156): NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler->renderForConsole(Object(Symfony\Component\Console\Output\ConsoleOutput), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#15 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#16 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(178): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#17 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#18 {main}
+  thrown in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php on line 52
+[07-Oct-2023 17:07:06 UTC] PHP Fatal error:  Uncaught Whoops\Exception\ErrorException: Using ${var} in strings is deprecated, use {$var} instead in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php:52
+Stack trace:
+#0 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): Whoops\Run->handleError(8192, 'Using ${var} in...', '/home1/jsmicewj...', 52)
+#1 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): include()
+#2 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/home1/jsmicewj...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Facade\\Ignition...')
+#4 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(50): class_implements('Facade\\Ignition...')
+#5 [internal function]: Facade\Ignition\SolutionProviders\SolutionProviderRepository->Facade\Ignition\SolutionProviders\{closure}('Facade\\Ignition...', 10)
+#6 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(700): array_filter(Array, Object(Closure), 1)
+#7 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(345): Illuminate\Support\Arr::where(Array, Object(Closure))
+#8 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(49): Illuminate\Support\Collection->filter(Object(Closure))
+#9 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php(36): Facade\Ignition\SolutionProviders\SolutionProviderRepository->getSolutionsForThrowable(Object(Whoops\Exception\ErrorException))
+#10 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(244): NunoMaduro\Collision\Adapters\Laravel\IgnitionSolutionsRepository->getFromThrowable(Object(Whoops\Exception\ErrorException))
+#11 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(123): NunoMaduro\Collision\Writer->renderSolution(Object(Whoops\Exception\Inspector))
+#12 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Handler.php(39): NunoMaduro\Collision\Writer->write(Object(Whoops\Exception\Inspector))
+#13 /home1/jsmicewj/jsm/vendor/filp/whoops/src/Whoops/Run.php(370): NunoMaduro\Collision\Handler->handle(Object(Whoops\Exception\ErrorException))
+#14 [internal function]: Whoops\Run->handleException(Object(Whoops\Exception\ErrorException))
+#15 {main}
+  thrown in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php on line 52
+[07-Oct-2023 17:07:06 UTC] PHP Fatal error:  Uncaught Whoops\Exception\ErrorException: Using ${var} in strings is deprecated, use {$var} instead in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php:52
+Stack trace:
+#0 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): Whoops\Run->handleError(8192, 'Using ${var} in...', '/home1/jsmicewj...', 52)
+#1 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): include()
+#2 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/home1/jsmicewj...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Facade\\Ignition...')
+#4 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(50): class_implements('Facade\\Ignition...')
+#5 [internal function]: Facade\Ignition\SolutionProviders\SolutionProviderRepository->Facade\Ignition\SolutionProviders\{closure}('Facade\\Ignition...', 10)
+#6 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(700): array_filter(Array, Object(Closure), 1)
+#7 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(345): Illuminate\Support\Arr::where(Array, Object(Closure))
+#8 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(49): Illuminate\Support\Collection->filter(Object(Closure))
+#9 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php(36): Facade\Ignition\SolutionProviders\SolutionProviderRepository->getSolutionsForThrowable(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#10 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(244): NunoMaduro\Collision\Adapters\Laravel\IgnitionSolutionsRepository->getFromThrowable(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#11 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(123): NunoMaduro\Collision\Writer->renderSolution(Object(NunoMaduro\Collision\Adapters\Laravel\Inspector))
+#12 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Handler.php(39): NunoMaduro\Collision\Writer->write(Object(NunoMaduro\Collision\Adapters\Laravel\Inspector))
+#13 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php(72): NunoMaduro\Collision\Handler->handle()
+#14 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(156): NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler->renderForConsole(Object(Symfony\Component\Console\Output\ConsoleOutput), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#15 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#16 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(178): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#17 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#18 {main}
+  thrown in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php on line 52
+[07-Oct-2023 18:33:48 UTC] PHP Fatal error:  Uncaught Whoops\Exception\ErrorException: Using ${var} in strings is deprecated, use {$var} instead in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php:52
+Stack trace:
+#0 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): Whoops\Run->handleError(8192, 'Using ${var} in...', '/home1/jsmicewj...', 52)
+#1 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): include()
+#2 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/home1/jsmicewj...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Facade\\Ignition...')
+#4 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(50): class_implements('Facade\\Ignition...')
+#5 [internal function]: Facade\Ignition\SolutionProviders\SolutionProviderRepository->Facade\Ignition\SolutionProviders\{closure}('Facade\\Ignition...', 10)
+#6 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(700): array_filter(Array, Object(Closure), 1)
+#7 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(345): Illuminate\Support\Arr::where(Array, Object(Closure))
+#8 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(49): Illuminate\Support\Collection->filter(Object(Closure))
+#9 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php(36): Facade\Ignition\SolutionProviders\SolutionProviderRepository->getSolutionsForThrowable(Object(Whoops\Exception\ErrorException))
+#10 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(244): NunoMaduro\Collision\Adapters\Laravel\IgnitionSolutionsRepository->getFromThrowable(Object(Whoops\Exception\ErrorException))
+#11 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(123): NunoMaduro\Collision\Writer->renderSolution(Object(Whoops\Exception\Inspector))
+#12 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Handler.php(39): NunoMaduro\Collision\Writer->write(Object(Whoops\Exception\Inspector))
+#13 /home1/jsmicewj/jsm/vendor/filp/whoops/src/Whoops/Run.php(370): NunoMaduro\Collision\Handler->handle(Object(Whoops\Exception\ErrorException))
+#14 [internal function]: Whoops\Run->handleException(Object(Whoops\Exception\ErrorException))
+#15 {main}
+  thrown in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php on line 52
+[07-Oct-2023 18:33:48 UTC] PHP Fatal error:  Uncaught Whoops\Exception\ErrorException: Using ${var} in strings is deprecated, use {$var} instead in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php:52
+Stack trace:
+#0 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): Whoops\Run->handleError(8192, 'Using ${var} in...', '/home1/jsmicewj...', 52)
+#1 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(571): include()
+#2 /home1/jsmicewj/jsm/vendor/composer/ClassLoader.php(428): Composer\Autoload\includeFile('/home1/jsmicewj...')
+#3 [internal function]: Composer\Autoload\ClassLoader->loadClass('Facade\\Ignition...')
+#4 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(50): class_implements('Facade\\Ignition...')
+#5 [internal function]: Facade\Ignition\SolutionProviders\SolutionProviderRepository->Facade\Ignition\SolutionProviders\{closure}('Facade\\Ignition...', 10)
+#6 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Arr.php(700): array_filter(Array, Object(Closure), 1)
+#7 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Collections/Collection.php(345): Illuminate\Support\Arr::where(Array, Object(Closure))
+#8 /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/SolutionProviderRepository.php(49): Illuminate\Support\Collection->filter(Object(Closure))
+#9 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Adapters/Laravel/IgnitionSolutionsRepository.php(36): Facade\Ignition\SolutionProviders\SolutionProviderRepository->getSolutionsForThrowable(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#10 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(244): NunoMaduro\Collision\Adapters\Laravel\IgnitionSolutionsRepository->getFromThrowable(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#11 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Writer.php(123): NunoMaduro\Collision\Writer->renderSolution(Object(NunoMaduro\Collision\Adapters\Laravel\Inspector))
+#12 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Handler.php(39): NunoMaduro\Collision\Writer->write(Object(NunoMaduro\Collision\Adapters\Laravel\Inspector))
+#13 /home1/jsmicewj/jsm/vendor/nunomaduro/collision/src/Adapters/Laravel/ExceptionHandler.php(72): NunoMaduro\Collision\Handler->handle()
+#14 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(156): NunoMaduro\Collision\Adapters\Laravel\ExceptionHandler->renderForConsole(Object(Symfony\Component\Console\Output\ConsoleOutput), Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#15 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(142): Illuminate\Foundation\Bootstrap\HandleExceptions->renderForConsole(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#16 /home1/jsmicewj/jsm/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(178): Illuminate\Foundation\Bootstrap\HandleExceptions->handleException(Object(Symfony\Component\ErrorHandler\Error\FatalError))
+#17 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#18 {main}
+  thrown in /home1/jsmicewj/jsm/vendor/facade/ignition/src/SolutionProviders/MergeConflictSolutionProvider.php on line 52
