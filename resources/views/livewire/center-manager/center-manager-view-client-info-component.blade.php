@@ -388,7 +388,7 @@
                         </tr>
                         
                         <tr class="bg-dark text-light">
-                            <td colspan="3">
+                            <td colspan="5">
                                 <b>Documents</b>
                             </td>
                         </tr>
@@ -402,6 +402,12 @@
                             <td>
                                 <b>Pan</b>
                             </td>
+                            <td>
+                                <b>Husband Image</b>
+                            </td>
+                            <td>
+                                <b>Husband Adhaar</b>
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -414,6 +420,14 @@
                             </td>
                             <td>
                                 <img src="{{ asset('assets/images/clients') }}/{{ $client->pan_scan }}"
+                                    style="height: 100px; width: 100px;" alt="">
+                            </td>
+                            <td>
+                                <img src="{{ asset('assets/images/clients') }}/{{ $client->husband_image }}"
+                                    style="height: 100px; width: 100px;" alt="">
+                            </td>
+                            <td>
+                                <img src="{{ asset('assets/images/clients') }}/{{ $client->husband_adhaar }}"
                                     style="height: 100px; width: 100px;" alt="">
                             </td>
                         </tr>

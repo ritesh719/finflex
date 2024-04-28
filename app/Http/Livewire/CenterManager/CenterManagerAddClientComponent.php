@@ -20,6 +20,8 @@ class CenterManagerAddClientComponent extends Component
     public $photo_scan;
     public $adhaar_scan;
     public $pan_scan;
+    public $husband_image;
+    public $husband_adhaar;
     public $adhaar_number;
     public $dob; //age
     public $gender;
@@ -146,6 +148,18 @@ public function gen_next_id()
             $imageName = Carbon::now()->timestamp . 'pan.' . $this->pan_scan->extension();
             $this->pan_scan->storeAs('clients', $imageName);
             $client->pan_scan = $imageName;
+        }
+
+        if ($this->husband_image) {
+            $imageName = Carbon::now()->timestamp . 'husband.' . $this->husband_image->extension();
+            $this->husband_image->storeAs('clients', $imageName);
+            $client->husband_image = $imageName;
+        }
+
+        if ($this->husband_adhaar) {
+            $imageName = Carbon::now()->timestamp . 'husband_adhaar.' . $this->husband_adhaar->extension();
+            $this->husband_adhaar->storeAs('clients', $imageName);
+            $client->husband_adhaar = $imageName;
         }
 
         if ($this->adhaar_number) {

@@ -42,6 +42,14 @@
                                             <input wire:model="pan_scan" type="file" class="dropify3"
                                                 data-height="180">
                                         </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <input wire:model="husband_image" type="file" class="dropify4"
+                                                data-height="180">
+                                        </div>
+                                        <div class="col-lg-4 col-sm-12">
+                                            <input wire:model="husband_adhaar" type="file" class="dropify5"
+                                                data-height="180">
+                                        </div>
                                         <div class="col-6">
                                             <div class="form-group">
                                                 <label class="form-label">Mobile</label>
@@ -584,6 +592,26 @@
         $('.dropify3').dropify({
             messages: {
                 'default': 'Upload pan card image',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong appended.'
+            },
+            error: {
+                'fileSize': 'The file size is too big (20M max).'
+            }
+        });
+        $('.dropify4').dropify({
+            messages: {
+                'default': 'Upload husband image',
+                'remove': 'Remove',
+                'error': 'Ooops, something wrong appended.'
+            },
+            error: {
+                'fileSize': 'The file size is too big (20M max).'
+            }
+        });
+        $('.dropify5').dropify({
+            messages: {
+                'default': 'Upload husband adhaar image',
                 'remove': 'Remove',
                 'error': 'Ooops, something wrong appended.'
             },
