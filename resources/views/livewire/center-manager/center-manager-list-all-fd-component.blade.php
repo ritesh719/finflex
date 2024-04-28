@@ -24,6 +24,7 @@
                                 <td><b>B:C</b></td>
                                 <td><b>Opening (YYYY/MM/DD)</b></td>
                                 <td><b>Client</b></td>
+                                <td><b>Client Name</b></td>
                                 <td><b>Principal</b></td>
                                 <td><b>Interest</b></td>
                                 <td><b>Amount</b></td>
@@ -42,6 +43,10 @@
                                         <td>
                                             <a
                                                 href="/center-manager/view-client/{{ $fd->client_id }}">{{ $fd->client_id }}</a>
+                                        </td>
+                                        <td>
+                                            <a
+                                                href="/center-manager/view-client/{{ $fd->client_id }}">{{ $fd->client->name }}</a>
                                         </td>
                                         <td>
                                             {{ number_format($fd->principal, 2) }}
